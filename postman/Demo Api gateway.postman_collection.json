@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "4542f2ca-803e-4bd4-8902-93a5fa1f44b9",
+		"name": "Demo Api gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "store order",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://discord.com/api/v9/channels/1082355064926130328/messages",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "OTk2NzgxNzE4MzY1Mjg2NDMw.G9Fxqf.vLxbIV_wj_CB7GzbyMYGPlRH6nEv9dexetWo3Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"kd\",\r\n    \"nonce\": \"1083056872900001795\",\r\n    \"tts\": false,\r\n    \"flags\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://discord.com/api/v9/channels/1082355064926130328/messages",
+					"protocol": "https",
+					"host": [
+						"discord",
+						"com"
+					],
+					"path": [
+						"api",
+						"v9",
+						"channels",
+						"1082355064926130328",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Lam IT\",\r\n    \"email\": \"lamhuynhb779@gmail.com\",\r\n    \"password\": \"lam4265796\",\r\n    \"password_confirmation\": \"lam4265796\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"lamhuynhb779@gmail.com\",\r\n    \"password\": \"lam4265796\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjgzMTkwNmE1ZTAwZjE0MTczNzA4YTYwNDRmNDhmZWFiNTMyNjFkN2QwODIwODFhZTc5NTAxMjJkOWJmNmEzMWQ0M2YzMmEwNDJmMDY5NzEiLCJpYXQiOjE2ODE1NTYzMzcuNTE0Nzg3LCJuYmYiOjE2ODE1NTYzMzcuNTE0NzksImV4cCI6MTY5NzM2NzUzNy41MDc5MzcsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.uILBUBdJNthXvpQo2qaldZFfxkrE_HloNaB9HCNUtp9SCtuJn1j5IVWsQFo9XDObeibMVveljIIZ_nVByxx8tyHvdkWU8jN6nZmm1h6ZCFxGhA-m0WA6r1Zb04SIlNylP31jtT1yQjgLqGEYp9RYoJa2c4Gg3QMBrF7PKB3nWIUwcohbUv31JrxIAkhcB8MOdhNIPFUYI-Xu1rlCgs36Fd3ZYMt2lQsuIU57uIK1X0vOpFzflGbPWscB6zAqvPcKaVDJrPA6WhEZMITdkQg4ledCW0VtK05i3BqEIJCUv0DL3XWLrU2O6XfTFNX5WlfLqSHoRGGTPge7iJ3t_8STvwPmG2ofHJNxKL7CCOgBfaefim8LFPFYPp7XRFOtYmMp8D5JeqUTeDwYlcPmtIilD_Z7f-H1tOlhrKPU5BK4BX_WahyYBx1gWYLB4MeEGx1HqjKu5z7jf4MCPztan1YRtozab8xHiFx2k3MCQFFmYi6tAXWoScY86u908NHa4RXm6d0RG5yWDY09W4ZOvJi9rtlycBFTzuAWNwMcMWjd4qScJmlDnGFkBcehmG0_LaSNAgzSVapsM4voHjLdiW2gPojUmLWb-23_RhdXyXpyodqrzZGbMNC6c8rll2lX7hZvh6WXRrPQDfrVhzZvXpQbYXnGpmrClO7SR9Jl4v3vov8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"lamhuynhb779@gmail.com\",\r\n    \"password\": \"lam4265796\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/products",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/products/3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "mysecret1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/products/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8001/api/products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "mysecret1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"demo\",\r\n    \"price\": 123.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/products",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjgzMTkwNmE1ZTAwZjE0MTczNzA4YTYwNDRmNDhmZWFiNTMyNjFkN2QwODIwODFhZTc5NTAxMjJkOWJmNmEzMWQ0M2YzMmEwNDJmMDY5NzEiLCJpYXQiOjE2ODE1NTYzMzcuNTE0Nzg3LCJuYmYiOjE2ODE1NTYzMzcuNTE0NzksImV4cCI6MTY5NzM2NzUzNy41MDc5MzcsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.uILBUBdJNthXvpQo2qaldZFfxkrE_HloNaB9HCNUtp9SCtuJn1j5IVWsQFo9XDObeibMVveljIIZ_nVByxx8tyHvdkWU8jN6nZmm1h6ZCFxGhA-m0WA6r1Zb04SIlNylP31jtT1yQjgLqGEYp9RYoJa2c4Gg3QMBrF7PKB3nWIUwcohbUv31JrxIAkhcB8MOdhNIPFUYI-Xu1rlCgs36Fd3ZYMt2lQsuIU57uIK1X0vOpFzflGbPWscB6zAqvPcKaVDJrPA6WhEZMITdkQg4ledCW0VtK05i3BqEIJCUv0DL3XWLrU2O6XfTFNX5WlfLqSHoRGGTPge7iJ3t_8STvwPmG2ofHJNxKL7CCOgBfaefim8LFPFYPp7XRFOtYmMp8D5JeqUTeDwYlcPmtIilD_Z7f-H1tOlhrKPU5BK4BX_WahyYBx1gWYLB4MeEGx1HqjKu5z7jf4MCPztan1YRtozab8xHiFx2k3MCQFFmYi6tAXWoScY86u908NHa4RXm6d0RG5yWDY09W4ZOvJi9rtlycBFTzuAWNwMcMWjd4qScJmlDnGFkBcehmG0_LaSNAgzSVapsM4voHjLdiW2gPojUmLWb-23_RhdXyXpyodqrzZGbMNC6c8rll2lX7hZvh6WXRrPQDfrVhzZvXpQbYXnGpmrClO7SR9Jl4v3vov8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
